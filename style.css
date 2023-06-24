@@ -5,8 +5,21 @@ body {
     height: 100%;
 }
 
+:root {
+    --left-container-width: 400px;
+}
+
 #map {
     height: 100%;
+}
+
+.button-container {
+    position: absolute;
+    top: 0;
+    width: 100px;
+    height: 100px;
+    z-index: 1000;
+    right: var(--left-container-width); /* -ve of this? */
 }
 
 .quakes_info {
@@ -14,7 +27,7 @@ body {
     right: 0;
     top: 0;
     height: 100%;
-    width: 400px;
+    width: var(--left-container-width);
     z-index: 1000;
 }
 
