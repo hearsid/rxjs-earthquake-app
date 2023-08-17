@@ -21,11 +21,11 @@ class Map {
       if (draggingEnabled) {
         this.map.dragging.disable();
         draggingEnabled = false;
-        toggleDragButton.textContent = 'Enable Dragging';
+        toggleDragButton.textContent = 'Disable Dwaring';
       } else {
         this.map.dragging.enable();
         draggingEnabled = true;
-        toggleDragButton.textContent = 'Disable Dragging';
+        toggleDragButton.textContent = 'Enable Drawing';
       }
     }
 
